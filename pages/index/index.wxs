@@ -1,0 +1,96 @@
+var qbfunction = function (event, ownerInstance) {
+	var allproducts = ownerInstance.selectComponent('.allproducts');
+	var fashion = ownerInstance.selectComponent('#fashion');
+	var accessories = ownerInstance.selectComponent('#accessories');
+	var qb = ownerInstance.selectComponent('.qb');
+	var sz = ownerInstance.selectComponent('.sz');
+	var ss = ownerInstance.selectComponent('.ss');
+	fashion.setStyle({
+		"display": "none"
+	})
+	sz.setStyle({
+		"color": "#1F1F1F",
+		"font-size": "15px"
+	})
+	accessories.setStyle({
+		"display": "none"
+	})
+	ss.setStyle({
+		"color": "#1F1F1F",
+		"font-size": "15px"
+	})
+	allproducts.setStyle({
+		"display": "block"
+	})
+	qb.setStyle({
+		"color": "#795548",
+		"font-size": "16px"
+	})
+	// return true
+}
+var szfunction = function (event, ownerInstance) {
+	var allproducts = ownerInstance.selectComponent('.allproducts');
+	var fashion = ownerInstance.selectComponent('#fashion');
+	var accessories = ownerInstance.selectComponent('#accessories');
+	var qb = ownerInstance.selectComponent('.qb');
+	var sz = ownerInstance.selectComponent('.sz');
+	var ss = ownerInstance.selectComponent('.ss');
+	fashion.setStyle({
+		"display": "block"
+	})
+	sz.setStyle({
+		"color": "#795548",
+		"font-size": "16px"
+	})
+	accessories.setStyle({
+		"display": "none"
+	})
+	ss.setStyle({
+		"color": "#1F1F1F",
+		"font-size": "15px"
+	})
+	allproducts.setStyle({
+		"display": "none"
+	})
+	qb.setStyle({
+		"color": "#1F1F1F",
+		"font-size": "15px"
+	})
+	// return true
+}
+var ssfunction = function (event, ownerInstance) {
+	var allproducts = ownerInstance.selectComponent('.allproducts');
+	var fashion = ownerInstance.selectComponent('#fashion');
+	var accessories = ownerInstance.selectComponent('#accessories');
+	var qb = ownerInstance.selectComponent('.qb');
+	var sz = ownerInstance.selectComponent('.sz');
+	var ss = ownerInstance.selectComponent('.ss');
+	fashion.setStyle({
+		"display": "none"
+	})
+	sz.setStyle({
+		"color": "#1F1F1F",
+		"font-size": "15px"
+	})
+	accessories.setStyle({
+		"display": "block"
+	})
+	ss.setStyle({
+		"color": "#795548",
+		"font-size": "16px"
+	})
+	allproducts.setStyle({
+		"display": "none"
+	})
+	qb.setStyle({
+		"color": "#1F1F1F",
+		"font-size": "15px"
+	})
+	// return true
+}
+
+module.exports = {
+	qbfunction: qbfunction,
+	szfunction: szfunction,
+	ssfunction: ssfunction
+}

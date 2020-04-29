@@ -1,0 +1,43 @@
+<!--pages/my/my.wxml-->
+<view class="personal_info">
+    <view class="photo_wrap">
+        <image src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="nickname">
+        {{userInfo.nickName}}
+    </view>
+</view>
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+
+<view class="ul">
+    <!-- <view class="li">
+        我的收藏
+        <image src="../../image/icon-arrow.png"></image>
+    </view> -->
+    
+	<navigator url="/pages/address/address" hover-class="none">
+		<view class="li">
+			我的地址
+			<image src="../../image/icon-arrow.png"></image>
+		</view>
+	</navigator>
+	<navigator url="/pages/about/about" hover-class="none">
+    	<view class="li">
+			关于商城
+			<image src="../../image/icon-arrow.png"></image>
+		</view>
+	</navigator>
+	<navigator url="/pages/polite/polite" hover-class="none">
+    	<view class="li">
+			邀请有礼
+			<image src="../../image/icon-arrow.png"></image>
+		</view>
+	</navigator>
+	<navigator url="/pages/aa/aa" hover-class="none">
+    <	view class="li">
+			设置
+			<image src="../../image/icon-arrow.png"></image>
+		</view>
+	</navigator>
+</view>
+

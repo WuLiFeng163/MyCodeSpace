@@ -1,0 +1,33 @@
+<!--pages/local/local.wxml-->
+
+<view class="page-body">
+	<view class="page-body-form">
+		<button bindtap="getLocation">获取位置</button>
+    </view>
+</view>
+<!-- 天气 -->
+<view class='content'>
+  	<view class='today'>
+		<view class='temp'>{{weather.temperature.data}}℃</view>
+		<view class='weather'>{{weather.weather.data}} {{weather.winddirection.data}} {{weather.windpower.data}}</view>
+		<view class="reminder">友情提示：今天天气不错，风和日丽的，适合出去玩</view>
+		<view class='city'>{{weather.city.data}}</view>
+    </view>
+</view>
+
+<!-- //地址 -->
+<view class="address">当前地址</view>
+<view class="box">
+	<view >{{address[0].name}}</view>
+	<view bindtap="relocation" class="relocation">重新定位</view>
+</view>
+
+<!-- 附近地址 -->
+<view class="address">附近地址</view>
+<view class="box_two">
+	<view class="name">{{address[0].regeocodeData.pois[0].name}}</view>
+	<view class="name">{{address[0].regeocodeData.pois[1].name}}</view>
+	<view class="name">{{address[0].regeocodeData.pois[2].name}}</view>
+</view>
+
+

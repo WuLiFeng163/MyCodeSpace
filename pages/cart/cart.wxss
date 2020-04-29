@@ -1,0 +1,222 @@
+/* pages/cart/cart.wxss */
+.car_head{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	line-height: 50px;
+}
+.car_head view{
+	width: 48%;
+	display: inline-block;
+	margin: 0;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.bags_con{
+	color: pink;
+}
+.order_con{
+	color: skyblue;
+}
+
+.goods{
+	width: 96%;
+	height: 80px;
+	margin: 10px 2%;
+	position: relative;
+	border-radius: 5px;
+	background-color: #F0F0F0;
+}
+.goods::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.goods .sp{
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+}
+.goods .txt{
+	width: 80px;
+	height: 50px;
+	margin: 15px;
+	font-size: 12px;
+	color: #1F1F1F;
+	float: left;
+}
+.goods .txt view{
+	width: 80px;
+	height: 25px;
+	line-height: 25px;
+}
+.goods .sc{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	bottom: 20px;
+	right: 10px;
+}
+.goods .gn{
+	width: 80px;
+	height: 20px;
+	margin: 40px 0 0 0;
+	float: left;
+}
+.goods .gn view{
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	color: #1F1F1F;
+	border: 1px solid #1F1F1F;
+	font-size: 10px;
+	float: left;
+}
+.goods .gn view:nth-child(1){
+	width: 18px;
+}
+.goods .gn view:nth-child(2){
+	width: 35px;
+	border-left:0;
+	border-right: 0; 
+}
+.goods .gn view:nth-child(3){
+	width: 18px;
+}
+
+
+.omg{
+	width: 100%;
+	height: 50px;
+}
+
+
+
+/* 底部 */
+.down{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	background-color: #F0F0F0;
+	z-index: 999;
+}
+.total{
+	width: 50px;
+	height: 30px;
+	margin: 10px ;
+	line-height: 30px;
+	text-align: center;
+	color: #1F1F1F;
+	font-size: 14px;
+	float: left;
+}
+.num{
+	width: 40px;
+	height: 30px;
+	margin: 10px 0;
+	line-height: 30px;
+	color: #1F1F1F;
+	font-size: 14px;
+	float: left;
+}
+.xd{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	color: #1F1F1F;
+	font-size: 12px;
+	float: left;
+	position: absolute;
+	right: 20px;
+	top: 9px;
+	text-align: center;
+	border: 1px solid #1F1F1F;
+}
+
+
+
+
+
+
+
+
+/* ----订单------------ */
+.order_con{
+	color: pink;
+}
+.order_con{
+	color: skyblue;
+}
+
+.order_box{
+	width: 96%;
+	height: 80px;
+	margin: 10px 2%;
+	position: relative;
+	border-radius: 5px;
+	background-color: #F0F0F0;
+}
+.order_box::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.order_box .order_sp{
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+}
+.order_box .order_txt{
+	width: 80px;
+	height: 50px;
+	margin: 15px;
+	font-size: 12px;
+	color: #1F1F1F;
+	float: left;
+}
+.order_box .order_txt view{
+	width: 80px;
+	height: 25px;
+	line-height: 25px;
+}
+.order_box .order_num{
+	width: 80px;
+	height: 20px;
+	margin: 40px 0 0 0;
+	float: left;
+}
+.order_box .order_num view{
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	color: #1F1F1F;
+	font-size: 10px;
+	float: left;
+	width: 10px;
+}
+.order_box .order_num view:nth-child(1){
+	width: 35px;
+}
+.order_box .qd{
+	position: absolute;
+	font-size: 10px;
+	width: 58px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	border: 1px solid #1F1F1F;
+	right: 5px;
+	bottom: 20px;
+	color: #fff;
+	background-color: #1F1F1F;
+	opacity: .8;
+}

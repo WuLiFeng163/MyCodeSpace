@@ -1,0 +1,239 @@
+/* tab三时尚配饰 */
+.head_img{
+	width: 100%;
+}
+.head_img image{
+	width: 100%;
+}
+
+#accessories{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: none;
+}
+#accessories .accessories_box{
+	width: 100%;
+	position: relative;
+}
+#accessories .accessories_box image{
+	display: block;
+	width: 100%;
+}
+.accessories_box .open_box{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+.accessories_box .open_box navigator{
+	width: 33.3%;
+	height: 50%;
+	float: left;
+}
+.accessories_box .open_box navigator #open{
+	width: 100%;
+	height: 100%;
+	background-color: pink;
+	opacity: 0;
+}
+
+/* tab二时装系列 */
+#fashion{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: none;
+}
+#fashion .omg{
+	width: 100%;
+}
+#fashion .omg image{
+	width: 100%;
+}
+#fashion .fashion_box{
+	width: 100%;
+	position: relative;
+}
+#fashion .fashion_box image{
+	display: block;
+	width: 100%;
+}
+#fashion .fashion_box .open_box{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+#fashion .fashion_box .open_box navigator{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+#fashion .fashion_box .open_box navigator #open{
+	width: 100%;
+	height: 100%;
+	background-color: pink;
+	opacity: 0;
+}
+
+
+/* tab一全部产品 */
+/* 头部样式搜索 */
+#head_bigbox{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3333;
+}
+
+.box{
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+}
+.box::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.head{
+	width: 90%;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+.head .search {
+	width: 92%;
+	height: 40px;
+	padding: 5px 3% 5px 5%;
+}
+.search input{
+	width: 95%;
+	border-radius: 5px;
+	padding-left: 5%;
+	height: 40px;
+	line-height: 50px;
+	color: #000;
+	background-color: #F2F2F2;
+}
+
+/* 头部分类样式 */
+.fenlei{
+	width: 8%;
+	height: 40px;
+	float: left;
+	padding: 5px 1%;
+}
+.fenlei image{
+	width: 100%;
+	height: 25px;
+	display: block;
+}
+.fenlei text{
+	display: block;
+	width: 100%;
+	height: 15px;
+	color: #000;
+	font-size: 10px;
+	text-align: center;
+}
+/* 头部end */
+
+/* 导航 */ 
+.navigation{
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+}
+.navigation::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.navigation view{
+	width: 33.3%;
+	height: 50px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	color: #000;
+	font-size: 15px;
+}
+.navigation view:nth-child(1){
+	color: #795548;
+}
+/* .navigation view:hover{
+	color: #795548;
+	font-size: 16px;
+} */
+
+/* 海报 */
+.allproducts{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+.poster{
+	width: 100%;
+}
+.poster image{
+	width: 100%;
+}
+/* love爱咋咋地 */
+.love{
+	width: 100%;
+	height: 200px;
+}
+.love .txt{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	/* line-height:50px; */
+}
+.love .txt:nth-child(1){
+	line-height: 80px;
+	font-size: 18px;
+	color: #999;
+}
+.love .txt:nth-child(2){
+	font-size: 22px;
+	font-weight: bold;
+	color: #333;
+	line-height:40px;
+}
+.love .btn_box{
+	width: 90%;
+	height: 60px;
+	padding: 20px 5%;
+}
+.love .btn_box .btn{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 58px;
+	font-size: 18px;
+	color: #1F1F1F;
+	border: 1px solid #1F1F1F;
+}
+/* ------公共样式 */
+
+
+/* 底部 */
+.dibu{
+	width: 100%;
+}
+.dibu image{
+	width: 100%;
+}

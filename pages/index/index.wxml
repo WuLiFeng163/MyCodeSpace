@@ -1,0 +1,106 @@
+
+<wxs module="test" src="./index.wxs"></wxs>
+<!--index.wxml-->
+<view id="head_bigbox">
+	<!-- head->  搜索+分类 -->
+	<view class="box">
+		<view class="head">
+			<view class="weui-cell weui-cell_input search">
+				<navigator url="/pages/search/search" hover-class="none">
+					<input class="weui-input" maxlength="20" placeholder="搜一搜..." />
+				</navigator>
+			</view>
+		</view>
+		<view class="fenlei">
+			<navigator url="/pages/cation/cation" hover-class="none">
+				<image src="../../image/fenlei_1.png"></image>
+			</navigator>
+			<text>分类</text>
+		</view>
+	</view>
+
+	<!-- 导航 -->
+	<view class="navigation">
+		<view bindtap="{{test.qbfunction}}" class="qb">全部产品</view>
+		<view bindtap="{{test.szfunction}}" class="sz">时装系列</view>
+		<view bindtap="{{test.ssfunction}}" class="ss">时尚配饰</view>
+	</view>
+</view>
+
+
+<!-- 全部产品 -->
+<view class="allproducts">
+	<view wx:for="{{goodslist}}" wx:key="*this">
+		<view class="poster"> 
+		<!-- 代言人 海报 -->
+			<navigator url="/pages/details/details" hover-class="none">
+				<image mode="widthFix" src="{{item.goodsImg}}"></image>
+			</navigator>
+		</view>
+		<view class="love">
+			<view class="txt">{{item.txt}}</view>
+			<view class="txt">{{item.loveMi}}</view>
+			<navigator url="/pages/details/details" hover-class="none">
+				<view class="btn_box">
+					<view class="btn">{{item.btnTxt}}</view>
+				</view>
+			</navigator>
+		</view>
+	</view>
+
+	<!-- 底部  介绍 -->
+	<view class="dibu"> 
+		<navigator url="/pages/details/details" hover-class="none">
+			<image mode="widthFix" src="../../image/dibu.jpg"></image>
+		</navigator>
+	</view>
+	
+</view>
+
+<!-- //时装系列 -->
+<view id="fashion">
+	<view class="omg"><image mode="widthFix" src="../../image/xqy1.jpg"></image></view>
+	<view class="fashion_box" wx:for="{{fashion}}" wx:key="*this">
+		<image mode="widthFix" src="{{item.spImg}}"></image>
+		<view class="open_box">
+			<navigator url="/pages/details/details" hover-class="none">
+				<view id="open"></view>
+			</navigator>
+			<navigator url="/pages/details/details" hover-class="none">
+				<view id="open"></view>
+			</navigator>
+		</view>
+	</view>
+</view>
+
+<!-- 时尚配饰 -->
+<view id="accessories">
+	<view class="head_img">
+		<image mode="widthFix" src="../../image/ban5.jpg"></image>
+	</view>
+
+	<view class="accessories_box" wx:for="{{accessories}}" wx:key="*this">
+		<image mode="widthFix" src="{{item.spImg}}"></image>
+		<view class="open_box">
+			<navigator url="/pages/details/details" hover-class="none">
+				<view id="open"></view>
+			</navigator>
+			<navigator url="/pages/details/details" hover-class="none">
+				<view id="open"></view>
+			</navigator>
+			<navigator url="/pages/details/details" hover-class="none">
+				<view id="open"></view>
+			</navigator>
+			<navigator url="/pages/details/details" hover-class="none">
+				<view id="open"></view>
+			</navigator>
+			<navigator url="/pages/details/details" hover-class="none">
+				<view id="open"></view>
+			</navigator>
+			<navigator url="/pages/details/details" hover-class="none">
+				<view id="open"></view>
+			</navigator>
+		</view>
+	</view>
+</view>
+

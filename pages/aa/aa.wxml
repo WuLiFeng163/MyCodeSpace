@@ -1,0 +1,9 @@
+<!--pages/aa/aa.wxml-->
+<view class="ul">
+	<navigator url="/pages/a/a" hover-class="none">
+		<view class="li">
+			品牌介绍
+			<image src="../../image/icon-arrow.png"></image>
+		</view>
+	</navigator>
+</view>

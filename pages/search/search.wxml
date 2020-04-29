@@ -1,0 +1,21 @@
+<!--pages/search/search.wxml-->
+<view class="weui-cell weui-cell_input search">
+	<input class="weui-input" maxlength="20" placeholder="搜一搜..." bindinput="cp"/>
+</view>
+
+<view class="bb">
+	<navigator url="/pages/details/details" hover-class="none">
+		<view class="s" style="display:{{ne}};">{{a}}</view>
+	</navigator>
+</view>
+
+<view class="hot">热门搜索</view>
+<view class="hot_con">
+	<navigator url="/pages/details/details" hover-class="none">
+		<view wx:for="{{hotCon}}" wx:key="*this" >
+			{{item}}
+		</view>
+	</navigator>
+</view>
+
+

@@ -1,0 +1,15 @@
+/* pages/a/a.wxss */
+.b{
+	width: 90%;
+	padding: 2px 5%;
+	font-size: 14px;
+	color: #1F1F1F;
+}
+.a{
+	width: 100%;
+}
+.a view{
+	text-indent: 5%;
+	width: 100%;
+	margin: 10px 0;
+}

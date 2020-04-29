@@ -1,0 +1,17 @@
+
+<view>
+	<text id="a">手机号:</text>
+	<view class="weui-cell weui-cell_input">
+		<input class="weui-input" maxlength="11" placeholder="输入手机号" bindblur="btn"/>
+	</view>
+	<text id="a">详细地址:</text>
+	<view class="weui-cell weui-cell_input">
+		<input class="weui-input" maxlength="20" placeholder="输入地址" bindblur="btn2"/>
+	</view>
+	<text id="a">收件人:</text>
+	<view class="weui-cell weui-cell_input">
+		<input class="weui-input" maxlength="6" placeholder="收件人" bindblur="btn3"/>
+	</view>
+</view>
+<view class="open">点击确定信息完成录入 ， 方可返回</view>
+<button type="default" size="{{defaultSize}}" hover-class="other-button-hover" bindtap="qd"> 确定 </button>

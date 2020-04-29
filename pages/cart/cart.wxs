@@ -1,0 +1,33 @@
+var order = function (event, ownerInstance){
+	var orderCon = ownerInstance.selectComponent('.order_con');
+	var bagsCon = ownerInstance.selectComponent('.bags_con');
+	orderCon.setStyle({
+		"display": "block"
+	})
+	bagsCon.setStyle({
+		"display": "none"
+	})
+}
+var open = "block"
+var bags = function (event, ownerInstance){
+	var orderCon = ownerInstance.selectComponent('.order_con');
+	var bagsCon = ownerInstance.selectComponent('.bags_con');
+	bagsCon.setStyle({
+		"display": "block"
+	})
+	orderCon.setStyle({
+		"display": "none"
+	})
+}
+
+// var orderTxt = "待签收"
+// var confirm = function(event, ownerInstance){
+// 	orderTxt = "已签收"
+// }
+module.exports = {
+	open:open,
+	order: order,
+	bags:bags
+	// orderTxt: orderTxt,
+	// confirm: confirm
+}

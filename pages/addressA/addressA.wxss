@@ -1,0 +1,29 @@
+/* pages/address/address.wxss */
+#a{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 10px;
+	font-size: 14px;
+}
+input{
+	font-size: 12px;
+	width: 90%;
+	padding: 0 5%;
+}
+.open{
+	width: 100%;
+	height: 40px;
+	font-size: 12px;
+	padding-left: 10px;
+	line-height: 40px;
+	color: #938a7b;
+}
+.button-hover {
+  background-color: red;
+}
+/** 添加自定义button点击态样式类**/
+.other-button-hover {
+  background-color: blue;
+}
+button {margin: 10px;}

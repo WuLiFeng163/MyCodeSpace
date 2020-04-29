@@ -1,0 +1,62 @@
+<!--pages/details/details.wxml-->
+<!-- 轮播图 -->
+<view class="banner">
+  <swiper indicator-dots="{{indicatorDots}}" indicator-color="#fff" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{banImg}}" wx:key="*this">
+      <swiper-item>
+			<view>
+				<image mode="widthFix" src="{{item}}"></image>
+			</view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="goods_ms">
+	<view class="ms_money">
+		<view class="money">￥{{formation[0].money}}</view>
+		<view class="old_money">￥{{formation[0].oldMoney}}</view>
+	</view>
+	<view class="txt">
+		SUNPLAY牛仔版型 轻盈 透气 舒爽【新旧包装随机发货】
+	</view>
+	<view class="txt_ms">
+		轻盈 透气 舒爽
+	</view>
+</view>
+
+<!-- 详情 -->
+<view class="sptxt">商品详情</view>
+<view class="xqy">
+	<image mode="widthFix" src="../../image/xqy1.jpg"></image>
+	<image mode="widthFix" src="../../image/xqy2.jpg"></image>
+	<image mode="widthFix" src="../../image/xqy3.jpg"></image>
+	<image mode="widthFix" src="../../image/xqy4.jpg"></image>
+</view>
+
+<!-- //订阅 -->
+<view class="subscribe">
+	<view class="subscribe_txt">订阅CALVIN KLEIN</view>
+	<view class="subscribe_msg">了解更多最新品牌新闻，独家时尚资讯和折扣信息。新用户注册即装50元优惠券</view>
+</view>
+
+
+
+<!-- 底部空隙 -->
+<view style="width:100%;height:60px;"></view>
+
+<!-- 底部 -->
+<view class="nav">
+    <view class="car">
+		<image bindtap="shop" src="../../image/car1.png"></image>
+		<view>购物车</view>
+	</view>
+	<view class="btn">
+		<view bindtap="setShop">加入购物车</view>
+		<navigator url="/pages/order/order" hover-class="none">
+			<view bindtap="move">立即购买</view>
+		</navigator>
+	</view>
+</view> 
+
+

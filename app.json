@@ -1,0 +1,66 @@
+{
+	"pages": [
+		
+		"pages/index/index",
+		"pages/cart/cart",
+		"pages/my/my",
+		
+		"pages/cation/cation",
+		"pages/search/search",
+		
+		"pages/order/order",
+		
+		"pages/addressA/addressA",
+		"pages/address/address",
+		"pages/dw/dw",
+
+		"pages/about/about",
+		"pages/polite/polite",
+		
+		"pages/details/details",
+
+		"pages/a/a",
+		"pages/aa/aa",
+
+		"pages/logs/logs"
+	],
+	"window": {
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "CK",
+		"navigationBarTextStyle": "black"
+	},
+	"permission": {
+		"scope.userLocation": {
+			"desc": "你的位置信息将用于小程序位置接口的效果展示"
+		}
+	},
+	"tabBar": {
+		"color": "#1F1F1F",
+		"selectedColor": "#69C3AA",
+		"backgroundColor": "#fff",
+		"borderStyle": "white",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "image/shouye1.png",
+				"selectedIconPath": "image/shouye.png"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"text": "订单",
+				"iconPath": "image/huodong1.png",
+				"selectedIconPath": "image/huodong.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "image/wode1.png",
+				"selectedIconPath": "image/wode.png"
+			}
+		]
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json"
+}

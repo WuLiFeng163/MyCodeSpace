@@ -1,0 +1,63 @@
+/* pages/myaddress/myaddress.wxss */
+.box{
+	width: 89%;
+	padding: 3% 5%;
+	border-radius: 20px;
+	border: 1px solid #ccbfab;
+	box-shadow: 1px 2px 2px #1F1F1F;
+	font-size: 14px;
+	margin: 5px 0;
+}
+.name{
+	width: 100%;
+	/* padding-left: 10px; */
+	display: block;
+}
+.number{
+	width: 100%;
+	/* padding-left: 10px; */
+	display: block;
+}
+.seat{
+	width: 100%;
+	/* padding-left: 10px; */
+	display: block;
+}
+.bot{
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.con{
+	display: none;
+}
+
+.dw{
+	width: 90%;
+	height: 50px;
+	color: #1F1F1F;
+	font-size: 16px;
+}
+.dw::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.dw image{
+	width: 20px;
+	height: 20px;
+	margin: 15px ;
+	display: block;
+	float: left;
+}
+.dw view{
+	height: 50px;
+	line-height: 50px;
+	margin: 0 ;
+	display: block;
+	float: left;
+}

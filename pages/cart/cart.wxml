@@ -1,0 +1,56 @@
+<!--pages/cart/cart.wxml-->
+<wxs module="test" src="./cart.wxs"></wxs>
+<view class="car_head">
+	<view  bindtap="{{test.bags}}">购物袋</view>|
+	<view  bindtap="{{test.order}}">我的订单</view>
+</view>
+<view class="omg"></view>
+
+<view class="bags_con" style="display:{{open}};">
+	<!-- 购物车商品 -->
+	<view class="goods" wx:for="{{carList}}" wx:key="*this">
+		<image class="sp" src="{{item.carImg}}"></image>
+		<view class="txt">
+			<view class="name">{{item.name}}</view>
+			<view class="money">￥{{item.money}}</view>
+		</view>
+		<view class="gn">
+			<view bindtap="reduce" data-id="{{index}}">-</view>
+			<view>{{item.num}}</view>
+			<view bindtap="add" data-id="{{index}}">+</view>
+		</view>
+		<image bindtap="del" data-id="{{index}}" class="sc" src="../../image/sc.png" ></image>
+	</view>
+	<!-- 下单栏 -->
+	<view class="omg"></view>
+	<view class="down">
+		<view class="total">总共</view>
+		<view class="num">￥{{total}}</view>
+		<view class="xd" bindtap="getdown">下单</view>
+	</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+<view class="order_con" style="display:{{noopen}};">
+<!-- 订单 -->
+	<view class="order_box" wx:for="{{orderList}}" wx:key="*this">
+		<image class="order_sp" src="{{item.carImg}}"></image>
+		<view class="order_txt">
+			<view class="order_name">{{item.name}}</view>
+			<view class="order_money">￥{{item.money}}</view>
+		</view>
+		<view class="order_num">
+			<view>X{{item.num}}</view>
+		</view>
+		<view class="qd" bindtap="confirm" data-i="{{index}}">{{item.orderTxt}}</view>
+	</view>
+</view>
+

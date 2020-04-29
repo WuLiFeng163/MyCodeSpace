@@ -1,0 +1,16 @@
+<!--pages/cation/cation.wxml-->
+<view class="tit">
+	分类中心
+</view>
+
+<view class="con_box" wx:for="{{cationlist}}" wx:key="*this">
+	<view class="con_tit">{{item.name}}</view>
+	<view class="con_conBox">
+		<view class="con_con" wx:for="{{item.imgs}}" wx:key="*this">
+			<navigator url="/pages/details/details" hover-class="none">
+				<image src="{{item}}"></image>
+			</navigator>
+			<view>衣服</view>
+		</view>
+	</view>
+</view>

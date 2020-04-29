@@ -1,0 +1,60 @@
+<!--pages/placeorder/placeorder.wxml-->
+<view class="address">
+	<navigator url="/pages/dw/dw" hover-class="navigator-hover=none">
+    	<image src="../../image/dingwei.png" class="iconAddress"></image>
+	</navigator>
+	<navigator url="/pages/address/address" hover-class="navigator-hover=none">
+		<view class="pay_content">
+			<view class="name">
+				<text>{{userName}}</text>
+				<text>{{userNumber}}</text>
+			</view>
+			<view class="dw">
+				{{seat}}{{address}}
+			</view>
+		</view>
+    	<image src="../../image/icon-arrow.png" class="iconArrow" ></image>
+	</navigator>
+    
+</view>
+
+<!-- 商品列表 -->
+<view class="pay_order">
+    <view class="thead tr">
+        <view class="td">
+            商品
+        </view>
+        <view class="td">
+            数量
+        </view>
+        <view class="td">
+            单价
+        </view>
+    </view>
+    <view class="tbody tr" wx:for="{{goodslist}}" wx:key="*this">
+        <view class="td">
+			{{item.name}}
+        </view>
+        <view class="td">
+			{{item.num}}
+        </view>
+        <view class="td">
+			{{item.money}}
+        </view>
+    </view>
+</view>
+
+
+<view class="pay_remarks">
+    <input placeholder="填写备注" type="text"></input>
+</view>
+
+
+
+<view class="car_bot">
+    <view class="car_bot_wrap">
+        总价 <text class="car_total_monay">￥{{total}}</text>
+        <view class="car_order_confirm" bindtap="open">支付</view>
+    </view>
+</view>
+
